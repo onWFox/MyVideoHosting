@@ -1,0 +1,14 @@
+
+.app{
+  
+}
+.content-page{
+  
+  display: flex;
+  flex-direction: row;
+ 
+  
+}
+.page-wrapper{
+  flex-grow: 1;
+}

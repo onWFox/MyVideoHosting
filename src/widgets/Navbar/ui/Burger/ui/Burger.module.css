@@ -1,0 +1,55 @@
+.burger {
+    display: inline-block;
+    position: relative;
+    width: 40px; /* Ширина бургера */
+    height: 40px; /* Высота бургера */
+    left: 5px;
+    z-index: 2;
+  }
+
+.burger::before, 
+/* Средняя палка */
+.burger span, 
+/* Нижняя палка */
+.burger::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: var(--secondary-color); /* Цвет линий бургера */
+    height: 3px; /* Толщина линий бургера */
+    width: 30px; /* Ширина линий равна ширине бургера */
+    border-radius: 5px;
+}
+
+.burger::before {
+    top: 25%;
+}
+
+.burger span {
+    top: 50%; /* Центрируем среднюю палку */
+    transform: translateY(-50%); /* Выровнять по центру */
+}
+
+.burger::after {
+    bottom: 25%;
+}
+.btn__burger{
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+
+}
+
+/* Анимация для иконки */
+.btn__burger.active .burger::before {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.btn__burger.active .burger span {
+  opacity: 0;
+}
+
+.btn__burger.active .burger::after {
+  transform: translateY(-9px) rotate(-45deg);
+}
