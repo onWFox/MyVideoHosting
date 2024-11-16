@@ -1,0 +1,14 @@
+.user__icon {
+    width: var(--user-icon-width);
+    height: var(--user-icon-height);
+    border-radius: 100%;
+    background-color: var(--secondary-color);
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .icon{
+    width: var(--user-icon-width);
+    height: var(--user-icon-height);
+    border-radius: 100%;
+  }

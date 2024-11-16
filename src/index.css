@@ -7,8 +7,12 @@
 :root{
   --text-color: white;
   --secondary-color: #ff3d54;
+  --secondary-logo-color: #1e0282;
   --bg-color: #222;
   --bg-sidebar-color: #575757;
+  --user-icon-width: 40px;
+  --user-icon-height: var(--user-icon-width);
+  --preview-viewers-color: #a8aff0;
 }
 body{
   background-color: var(--bg-color);

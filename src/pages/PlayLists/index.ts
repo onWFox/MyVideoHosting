@@ -1,3 +1,7 @@
-import PlayLists from "./ui/PlayLists";
+import { lazy } from "react"
+
+
+const PlayLists = lazy(()=> import("./ui/PlayLists"))
+
 
 export default PlayLists

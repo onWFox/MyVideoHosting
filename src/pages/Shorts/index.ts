@@ -1,3 +1,7 @@
-import Shorts from "./ui/Shorts";
+import { lazy } from "react"
+
+
+const Shorts = lazy(()=> import("./ui/Shorts"))
+
 
 export default Shorts

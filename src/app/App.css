@@ -1,6 +1,6 @@
 
 .app{
-  
+  height: 100svh;
 }
 .content-page{
   
@@ -11,4 +11,5 @@
 }
 .page-wrapper{
   flex-grow: 1;
+  padding: 20px;
 }

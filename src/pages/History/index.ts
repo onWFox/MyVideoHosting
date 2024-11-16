@@ -1,3 +1,7 @@
-import HistoryPage from "./ui/History";
+import { lazy } from "react"
 
-export default HistoryPage
+
+const History = lazy(()=> import("./ui/History"))
+
+
+export default History
