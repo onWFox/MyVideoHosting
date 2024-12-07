@@ -1,18 +1,33 @@
 .main {
   display: grid;
-  grid-template-columns: repeat(5, 300px);
-  gap: 10px;
+  grid-template-columns: repeat(5, 1fr); /* 5 видео в строке по умолчанию */
+  gap: 16px;
   padding: 10px;
+
 }
 
-@media (max-width: 600px) {
+
+
+@media (max-width: 1920px) {
   .main {
-    grid-template-columns: repeat(2, 1fr); /* 2 колонки на маленьких экранах */
+    grid-template-columns: repeat(4, 1fr); /* 4 видео в строке для экранов меньше 1920px */
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1600px) {
   .main {
-    grid-template-columns: 1fr; /* 1 колонка на очень маленьких экранах */
+    grid-template-columns: repeat(3, 1fr); /* 3 видео в строке для экранов меньше 1600px */
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr); /* 2 видео в строке для экранов меньше 1200px */
+  }
+}
+
+@media (max-width: 800px) {
+  .main {
+    grid-template-columns: 1fr; /* 1 видео в строке для экранов меньше 800px */
   }
 }

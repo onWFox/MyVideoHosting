@@ -34,15 +34,15 @@ const Sidebar = () => {
 
   const newSiderList = sidebarlist.map((item, index) => {
     return (
-      <li className={cls.sidebar__list__box} key={index}>
-        {show ? (
-          <>
-            <NavLink to={item.to}>{item.name}</NavLink>
-          </>
-        ) : (
-          ""
-        )}
-        <NavLink to={item.to}>
+      <li key={index}>
+        <NavLink className={cls.sidebar__list__box} to={item.to}>
+          {show ? (
+            <>
+              <div>{item.name}</div>
+            </>
+          ) : (
+            ""
+          )}
           <img className={cls.icon} src={item.icon} alt="" />
         </NavLink>
       </li>
