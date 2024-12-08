@@ -10,6 +10,8 @@
   
 }
 .page-wrapper{
+  position: relative;
+  z-index: -1;
   flex-grow: 1;
   padding: 20px;
 }

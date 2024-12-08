@@ -1,22 +1,63 @@
 .main {
+  position: relative;
+  top: 65px;
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 5 видео в строке по умолчанию */
-  gap: 16px;
+  gap: 10px;
   padding: 10px;
-
+  justify-content: center;
+  align-items: center;
+  margin-left: 95px;
+  z-index: 0;
+  transition: .1s;
 }
 
-
+.mainOpen{
+  position: relative;
+  top: 65px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 видео в строке по умолчанию */
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 300px;
+  z-index: 0;
+  transition: .3s;
+}
 
 @media (max-width: 1920px) {
+  .main
+   {
+
+    grid-template-columns: repeat(5, 1fr); /* 4 видео в строке для экранов меньше 1920px */
+  }
+  
+  .mainOpen{
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 230px;
+  }
+}
+
+@media (max-width: 1800px) {
   .main {
+    margin-left: 130px;
     grid-template-columns: repeat(4, 1fr); /* 4 видео в строке для экранов меньше 1920px */
+  }
+  .mainOpen{
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 320px;
   }
 }
 
 @media (max-width: 1600px) {
   .main {
+    margin-left: 105px;
     grid-template-columns: repeat(3, 1fr); /* 3 видео в строке для экранов меньше 1600px */
+  }
+  .mainOpen{
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 150px;
   }
 }
 
@@ -24,10 +65,18 @@
   .main {
     grid-template-columns: repeat(2, 1fr); /* 2 видео в строке для экранов меньше 1200px */
   }
+  .mainOpen{
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 350px;
+  }
 }
 
 @media (max-width: 800px) {
   .main {
     grid-template-columns: 1fr; /* 1 видео в строке для экранов меньше 800px */
+  }
+  .mainOpen{
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 350px;
   }
 }

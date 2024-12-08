@@ -1,13 +1,15 @@
 .header {
+ 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 60px;
     background-color: var(--bg-color);
   }
   .header__container {
+    position: fixed;
     height: 60px;
     border-bottom: 5px solid var(--secondary-color);
     border-bottom-left-radius: 3px;

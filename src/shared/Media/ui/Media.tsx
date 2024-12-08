@@ -1,4 +1,4 @@
-import preview from "../../../assets/preview.webp";
+// import preview from "../../../assets/preview.webp";
 import UserAva from "../../../shared/UserAva";
 
 import cls from "./Media.module.css";
@@ -6,7 +6,7 @@ import cls from "./Media.module.css";
 const Media = () => {
     return ( <div className={cls.media}>
         <div className={cls.preview__container}>
-          <img className={cls.preview} src={preview} alt="" />
+          <img className={cls.preview} src={""} alt="" />
           <p className={cls.preview__time}>5:00</p>
         </div>
         <div className={cls.preview__description}>
