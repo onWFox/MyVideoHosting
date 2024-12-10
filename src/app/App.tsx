@@ -8,11 +8,11 @@ function App() {
     <>
       <div className="app">
         <Navbar />
-        <div className="content-page">
+        
           <Sidebar />
           <div className="page-wrapper">
             <AppRouter/>
-          </div>
+          
         </div>
       </div>
     </>

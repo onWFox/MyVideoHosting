@@ -19,7 +19,7 @@ const MainPage = () => {
       <Media/>
       <Media/>
       <Media/>
-      <Media/>
+      <Media/> <Media/> <Media/> <Media/> <Media/> <Media/> <Media/> <Media/> <Media/> <Media/> <Media/>
       
     </div>
   );

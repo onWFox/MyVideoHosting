@@ -9,11 +9,12 @@
     background-color: var(--bg-color);
   }
   .header__container {
-    position: fixed;
+    position:fixed;
     height: 60px;
     border-bottom: 5px solid var(--secondary-color);
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+    z-index: 1;
     
   }
   .header__left {

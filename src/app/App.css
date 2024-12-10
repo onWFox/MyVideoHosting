@@ -4,14 +4,10 @@
 }
 .content-page{
   
-  display: flex;
-  flex-direction: row;
  
-  
 }
 .page-wrapper{
   position: relative;
-  z-index: -1;
-  flex-grow: 1;
+  z-index: 0;
   padding: 20px;
 }
